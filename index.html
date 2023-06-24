@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <!-- fs (font size), fw (font weight) -->
-          <a class="navbar-brand fs-4 fw-bold" href="#">Cindy</a>
+          <a class="navbar-brand fs-4 fw-bold" href="#">John Doe</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,7 +24,7 @@
             <!-- ms-auto: margin-start (untuk memberikan space ke sebelah kanannya) -->
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -40,6 +40,23 @@
         </div>
       </nav>
       
+      <section id="home" class="home container">
+          <div class="row d-flex align-items-center">
+            <div class="col-8">
+              <h3 class="fw-semibold">HI, I am</h3>
+              <h1 class="fw-bold">John Doe</h1>
+              <p>A Software Engineer based in Indonesia</p>
+              <a class="btn button" href="images/potrait.png" download>Resume</a>
+            </div>
+            <div class="col-4">
+              <img src="images/potrait.png" alt="Potrait">
+            </div>
+          </div>
+          <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
+            <a class="text-decoration-none text-dark" href="#about">More Info</a>
+            <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow">
+          </div>
+      </section>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
