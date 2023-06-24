@@ -14,7 +14,7 @@
 }
 
 section {
-    margin-top: 100px;
+    margin-top: 50px;
     padding-top: 128px;
     position: relative;
 }
@@ -37,6 +37,10 @@ section::before {
 
 .home h3 {
     font-size: 48px;
+}
+
+.home img {
+    width: 100%;
 }
 
 .btn.button {
@@ -160,4 +164,17 @@ section::before {
 footer {
     border-top: 1px solid black;
     padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -5px;
+        font-size: 64px;
+    }
 }

@@ -41,21 +41,21 @@
       </nav>
       
       <section id="home" class="home container">
-          <div class="row d-flex align-items-center">
-            <div class="col-8">
+          <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
               <h3 class="fw-semibold">HI, I am</h3>
               <h1 class="fw-bold">John Doe</h1>
               <p>A Software Engineer based in Indonesia</p>
               <a class="btn button" href="images/potrait.png" download>Resume</a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
               <img src="images/potrait.png" alt="Potrait">
             </div>
           </div>
-          <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-            <a class="text-decoration-none text-dark" href="#about">More Info</a>
+          <a class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5" href="#about">
+            <div class="text-dark">More Info</div>
             <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow">
-          </div>
+          </a>
       </section>
 
       <section id="about" class="about container">
@@ -96,10 +96,10 @@
 
       <section id="work" class="work container">
         <div class="row d-flex align-items-center gap-5">
-          <div class="col">
+          <div class="col-12 col-6">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nam consectetur excepturi delectus quibusdam, ad provident aliquid aliquam magni neque culpa placeat soluta accusamus sapiente facilis possimus ratione porro corrupti. Minima delectus quibusdam, quae autem voluptate nemo consectetur minus, magni dolores libero deleniti.</p>
           </div>
-          <div class="col work-img">
+          <div class="col-12 col-6 work-img">
             <div id="work-1" class="work-img-item">
               <img src="images/work-1.png" alt="Work1">
             </div>
@@ -115,24 +115,24 @@
 
       <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quos beatae inventore deleniti nemo, dicta earum minima, itaque ea nesciunt quas porro sed recusandae vel. Corrupti quae exercitationem quas, sed odio quia fugit obcaecati ex enim accusantium a earum ipsum. Ipsam facere aut cumque, voluptates possimus eaque debitis ipsa!</p>
             <div class="row">
               <div class="col d-flex align-items-center justify-content-center">
                 <img src="images/Facebook.svg" alt="Facebook">
-                <p>John Doe</p>
+                <p class="mb-0 ms-2">John Doe</p>
               </div>
               <div class="col d-flex align-items-center justify-content-center">
                 <img src="images/Instagram.svg" alt="Instagram">
-                <p>@john_doe</p>
+                <p class="mb-0 ms-2">@john_doe</p>
               </div>
               <div class="col d-flex align-items-center justify-content-center">
                 <img src="images/Twitter.svg" alt="Twitter">
-                <p>@john_doe</p>
+                <p class="mb-0 ms-2">@john_doe</p>
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-center">
+          <div class="col-12 col-lg-6 d-flex justify-content-center">
             <form class="contact-form" onsubmit="onFormSubmit(event)">
               <div class="mb-3">
                 <label for="inputEmail" class="form-label">Email</label>
