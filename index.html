@@ -27,13 +27,13 @@
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -112,6 +112,52 @@
           </div>
         </div>
       </section>
+
+      <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+          <div class="col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quos beatae inventore deleniti nemo, dicta earum minima, itaque ea nesciunt quas porro sed recusandae vel. Corrupti quae exercitationem quas, sed odio quia fugit obcaecati ex enim accusantium a earum ipsum. Ipsam facere aut cumque, voluptates possimus eaque debitis ipsa!</p>
+            <div class="row">
+              <div class="col d-flex align-items-center justify-content-center">
+                <img src="images/Facebook.svg" alt="Facebook">
+                <p>John Doe</p>
+              </div>
+              <div class="col d-flex align-items-center justify-content-center">
+                <img src="images/Instagram.svg" alt="Instagram">
+                <p>@john_doe</p>
+              </div>
+              <div class="col d-flex align-items-center justify-content-center">
+                <img src="images/Twitter.svg" alt="Twitter">
+                <p>@john_doe</p>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <form class="contact-form" onsubmit="onFormSubmit(event)">
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="example@gmail.com" required>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="inputSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="inputSubject" placeholder="Your Subject" required>
+              </div>
+              <div class="mb-3">
+                <label for="inputMessage" class="form-label">Message</label>
+                <input type="text" class="form-control" id="inputMessage" placeholder="Your Message" required>
+              </div>
+              <div class="d-flex justify-content-center mt-5">
+                <button type="submit" class="btn button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <h1 class="d-flex justify-content-center">@Copyright 2023</h1>
+      </footer>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

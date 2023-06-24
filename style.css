@@ -4,11 +4,17 @@
 }
 
 .navbar{
-    background-color: white;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.668);
+    /* box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25); */
+    border-bottom: 3px solid #979797;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1;
 }
 
 section {
+    margin-top: 100px;
     padding-top: 128px;
     position: relative;
 }
@@ -137,5 +143,21 @@ section::before {
     color: white;
     font-size: 24px;
     font-weight: 500;
+}
 
+.contact::before {
+    content: 'Contact';
+}
+
+.contact-form {
+    width: 450px;
+    border: 1px solid black;
+    padding: 50px 30px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+footer {
+    border-top: 1px solid black;
+    padding: 10px;
 }
